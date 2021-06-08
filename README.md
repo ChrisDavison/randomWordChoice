@@ -22,6 +22,14 @@ randomWordChoice -t -s "-" $HOME/words/animals.txt $HOME/words/jobs.txt
 
 Originally created `animalhash` to provide something like docker's auto generated process names (using word lists _adjectives.txt_, _colours.txt_, and _animals.txt_). Then, decided to add in _jobs.txt_ as a way of generating some drawing prompts.
 
+## Tips
+
+Perhaps easiest used by creating a shell alias to commonly used wordlists, e.g.:
+
+``` sh
+alias animalhash='randomWordChoice -s "" -t /usr/local/share/wordlists/adjectives.txt /usr/local/share/wordlists/colours.txt /usr/local/share/wordlists/animals.txt'
+```
+
 ## Install
 
 `go install`
